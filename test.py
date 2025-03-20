@@ -24,7 +24,7 @@ def tokenize_function(example):
 def group_texts(examples):
   # input_ids 그룹화
   concatenated_ids = sum(examples["input_ids"], [])
-  total_length = (len(concatenated_ids) // SEQ_LENGTH) * SEQ_LENGTH
+  total_length = (len(concatenated_ids) // SEQ_LENGTH) * SEQ_LENGTH 
   result_ids = [concatenated_ids[i : i + SEQ_LENGTH] for i in range(0, total_length, SEQ_LENGTH)]
   
   # attention_mask 그룹화 (존재하는 경우)
