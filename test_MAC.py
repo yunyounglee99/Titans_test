@@ -16,4 +16,4 @@ loss = transformer(token_ids, return_loss = True)
 loss.backward()
 
 sampled = transformer.sample(token_ids[:, :4], 512)
-sampled[0]
+print(sampled[0])

@@ -10,7 +10,7 @@ print(f"using device : {device}")
 
 SEQ_LENGTH = 128
 BATCH_SIZE = 8
-NUM_EPOCHS = 3
+NUM_EPOCHS = 3 
 LEARNING_RATE = 1e-4
 
 dataset = load_dataset("wikitext", "wikitext-2-raw-v1", split="train")
