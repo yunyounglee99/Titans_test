@@ -18,7 +18,7 @@ dataset = load_dataset("wikitext", "wikitext-2-raw-v1", split="train")
 tokenizer = GPT2Tokenizer.from_pretrained("gpt2")
 tokenizer.pad_token = tokenizer.eos_token
 
-def tokenize_function(example):
+def tokenize_function(example): 
   return tokenizer(example["text"])
 
 def group_texts(examples):
